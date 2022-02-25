@@ -1,0 +1,1006 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9439a5282c0b10b45bbb4929145a50f0, type: 3}
+  m_Name: Database_Items
+  m_EditorClassIdentifier: 
+  m_Categories:
+  - m_Name: Basic Items
+    m_Items:
+    - m_Name: Big Food Can
+      m_Id: -775629
+      m_Category: Basic Items
+      m_Icon: {fileID: 21300000, guid: eab3fcfbe94d7e14aae477a984df0e7b, type: 3}
+      m_Description: While not delicious, this canned burger can keep you satiated
+        for a long time.
+      m_Pickup: {fileID: 699599640, guid: 0f4270a8313d35d478ad6f397eb7c7f0, type: 3}
+      m_StackSize: 1
+      m_Weight: 0.5
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Hunger Restore
+          m_Id: 6644619
+          m_Type: 2
+          m_FixedValue: 55
+          m_UseRandomValue: 1
+          m_RandomValueRange: {x: 55, y: 65}
+        - m_Name: Thirst Restore
+          m_Id: -822597
+          m_Type: 2
+          m_FixedValue: 55
+          m_UseRandomValue: 1
+          m_RandomValueRange: {x: 10, y: 15}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Small Food Can
+      m_Id: -5172820
+      m_Category: Basic Items
+      m_Icon: {fileID: 21300000, guid: 88744312c813af648b314f9b713c38d0, type: 3}
+      m_Description: Tasty beans, keeps your hunger away for a long time.
+      m_Pickup: {fileID: 1530790082, guid: 81a94aa241cba664c9dce6803970a7b8, type: 3}
+      m_StackSize: 2
+      m_Weight: 0.2
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Hunger Restore
+          m_Id: 6644619
+          m_Type: 2
+          m_FixedValue: 0
+          m_UseRandomValue: 1
+          m_RandomValueRange: {x: 30, y: 40}
+        - m_Name: Thirst Restore
+          m_Id: -822597
+          m_Type: 2
+          m_FixedValue: 5
+          m_UseRandomValue: 1
+          m_RandomValueRange: {x: 5, y: 10}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Antibiotics
+      m_Id: -7251219
+      m_Category: Basic Items
+      m_Icon: {fileID: 21300000, guid: e93de62fae2244d488f5ee306f1ccac4, type: 3}
+      m_Description: 'Use it when injured.
+
+        Can mean the difference between
+        life and death.'
+      m_Pickup: {fileID: 209305994923648381, guid: c4beff218eedf084e95ef82c7810f796, type: 3}
+      m_StackSize: 9
+      m_Weight: 0.2
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Health Restore
+          m_Id: -3953950
+          m_Type: 2
+          m_FixedValue: 60
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Snack
+      m_Id: -2185286
+      m_Category: Basic Items
+      m_Icon: {fileID: 21300000, guid: c93b7a34014da2a4186f1e3b05d40d95, type: 3}
+      m_Description: 'Delicious chocolate bar.
+
+        Watch the expiration date.'
+      m_Pickup: {fileID: 1035769787, guid: 392db3ef28d230746a8ef45c3da8d4b1, type: 3}
+      m_StackSize: 5
+      m_Weight: 0.1
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Hunger Restore
+          m_Id: 6644619
+          m_Type: 2
+          m_FixedValue: 15
+          m_UseRandomValue: 1
+          m_RandomValueRange: {x: 20, y: 25}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Cooked Meat
+      m_Id: 5165223
+      m_Category: Basic Items
+      m_Icon: {fileID: 21300000, guid: 1ac06b87277db8d4398f3489dbd89cbf, type: 3}
+      m_Description: Sates your hunger for a good amount of time.
+      m_Pickup: {fileID: 2318995404924464061, guid: 9ddf95054868d0448889255cbb49623f, type: 3}
+      m_StackSize: 5
+      m_Weight: 0.25
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Hunger Restore
+          m_Id: 6644619
+          m_Type: 2
+          m_FixedValue: 25
+          m_UseRandomValue: 1
+          m_RandomValueRange: {x: 35, y: 40}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Raw Meat
+      m_Id: 3411390
+      m_Category: Basic Items
+      m_Icon: {fileID: 21300000, guid: 049ddb027084f9d478086e53a985b32e, type: 3}
+      m_Description: Very delicious cooked.
+      m_Pickup: {fileID: 369479471667832804, guid: 6b59289d0a2d4f04fb6e62dd73523f5a, type: 3}
+      m_StackSize: 5
+      m_Weight: 0.25
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Cooked Amount
+          m_Id: -5672974
+          m_Type: 2
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 45, y: 55}
+        - m_Name: Cooked Output
+          m_Id: 1946524
+          m_Type: 3
+          m_FixedValue: 5165223
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+  - m_Name: Resources
+    m_Items:
+    - m_Name: Stone Shard
+      m_Id: 7905912
+      m_Category: Resources
+      m_Icon: {fileID: 21300000, guid: 376bf224f13eb7f4dafab917774b689e, type: 3}
+      m_Description: Can be used in crafting recipes in need of a sharp object.
+      m_Pickup: {fileID: 4464473207706024536, guid: 905f11b855621f647be1cec6c3e53cd4, type: 3}
+      m_StackSize: 10
+      m_Weight: 0.4
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array: []
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Rope
+      m_Id: 731155
+      m_Category: Resources
+      m_Icon: {fileID: 21300000, guid: 80a0189fb197f1e4e8b0d40a0575346a, type: 3}
+      m_Description: Use it to craft tools, weapons, etc.
+      m_Pickup: {fileID: 3625687645100833014, guid: 90324cb9f1193c14a9462234749e48b1, type: 3}
+      m_StackSize: 5
+      m_Weight: 0.4
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 50
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 1
+        m_CraftDuration: 1
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 2
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 1
+    - m_Name: Stick
+      m_Id: 5357987
+      m_Category: Resources
+      m_Icon: {fileID: 21300000, guid: 570cf2cdb09133541b1a3eb714b5ab34, type: 3}
+      m_Description: Heart and soul of any survival recipe.
+      m_Pickup: {fileID: 1357694382, guid: af0206235a1122e49a3f11203321723b, type: 3}
+      m_StackSize: 10
+      m_Weight: 0.4
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 40
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Leather
+      m_Id: -8163044
+      m_Category: Resources
+      m_Icon: {fileID: 21300000, guid: c8e5001c6063af147b285d0e616d964d, type: 3}
+      m_Description: Acquired from skinning animals. Mainly useful for crafting clothing.
+      m_Pickup: {fileID: 1268441167, guid: d7a14c394c25c2c45ad90cb6847300c0, type: 3}
+      m_StackSize: 10
+      m_Weight: 0.4
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 25
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Cloth
+      m_Id: 6011459
+      m_Category: Resources
+      m_Icon: {fileID: 21300000, guid: eca535cbbfc81354cac49973f9aed2dd, type: 3}
+      m_Description: 'Commonly found through scavenging.
+
+        Used in crafting
+        basic and complex items.'
+      m_Pickup: {fileID: 1068900714, guid: 081d9403647bd1843bf4c418f5639e6c, type: 3}
+      m_StackSize: 10
+      m_Weight: 0.4
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 25
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Feather
+      m_Id: -4642947
+      m_Category: Resources
+      m_Icon: {fileID: 21300000, guid: 657e3b2284a28c14b88f3b7fab54433f, type: 3}
+      m_Description: Can be used in crafting arrows, provides increased stability
+        and accuracy.
+      m_Pickup: {fileID: 9052018411027526118, guid: 614a8637ddd5f0947b706892077b0777, type: 3}
+      m_StackSize: 20
+      m_Weight: 0.1
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 5
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+  - m_Name: Weapons
+    m_Items:
+    - m_Name: Marlin 336
+      m_Id: -4312529
+      m_Category: Weapons
+      m_Icon: {fileID: 21300000, guid: 77f6073a7307e6d4ab37c460adbbc366, type: 3}
+      m_Description: A powerful rifle, classic choice for hunting.
+      m_Pickup: {fileID: 7690275053532714762, guid: c569acaaf1eb28e418b172f5454b9239, type: 3}
+      m_StackSize: 1
+      m_Weight: 2.8
+      m_Tag:
+        m_Value: Wieldable
+      m_Properties:
+        m_Array:
+        - m_Name: Durability
+          m_Id: -3497939
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo In Magazine
+          m_Id: 3026253
+          m_Type: 1
+          m_FixedValue: 7
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Shooter Attachment
+          m_Id: -7018214
+          m_Type: 3
+          m_FixedValue: -421658
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: Wooden Bow
+      m_Id: 9964514
+      m_Category: Weapons
+      m_Icon: {fileID: 21300000, guid: 131feb2b06bc4824c8465b061fef4803, type: 3}
+      m_Description: The perfect weapon for hunting small animals.
+      m_Pickup: {fileID: 7690275053532714762, guid: da5013c059d40964691dc2f83920ca8a, type: 3}
+      m_StackSize: 1
+      m_Weight: 0.6
+      m_Tag:
+        m_Value: Wieldable
+      m_Properties:
+        m_Array:
+        - m_Name: Durability
+          m_Id: -3497939
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo In Magazine
+          m_Id: 3026253
+          m_Type: 1
+          m_FixedValue: 1
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 1
+        m_CraftDuration: 5
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 731155
+            Amount: 2
+          - Item:
+              m_Value: 6011459
+            Amount: 1
+          - Item:
+              m_Value: 5357987
+            Amount: 2
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.75
+    - m_Name: Wooden Spear
+      m_Id: -9924306
+      m_Category: Weapons
+      m_Icon: {fileID: 21300000, guid: 7444c664c7e43674bb8d0df61071498d, type: 3}
+      m_Description: 'Cheap and effective.
+
+        Can be used as a melee or ranged
+        weapon.'
+      m_Pickup: {fileID: 8141215525069229571, guid: 675d24efc5aa58a4d86f69e416e68957, type: 3}
+      m_StackSize: 1
+      m_Weight: 1
+      m_Tag:
+        m_Value: Wieldable
+      m_Properties:
+        m_Array:
+        - m_Name: Durability
+          m_Id: -3497939
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 1
+        m_CraftDuration: 3
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 5357987
+            Amount: 5
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.75
+    - m_Name: Hunting Knife
+      m_Id: 3760192
+      m_Category: Weapons
+      m_Icon: {fileID: 21300000, guid: 8779dbc83d05af8469887b16fcb3a5b7, type: 3}
+      m_Description: Great alternative to ranged combat.
+      m_Pickup: {fileID: 849652321177590722, guid: 3df1f16ee3fca804182c8e1b145828a0, type: 3}
+      m_StackSize: 1
+      m_Weight: 0.6
+      m_Tag:
+        m_Value: Wieldable
+      m_Properties:
+        m_Array:
+        - m_Name: Durability
+          m_Id: -3497939
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 5357987
+            Amount: 3
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.75
+    - m_Name: Hunting Axe
+      m_Id: 4797658
+      m_Category: Weapons
+      m_Icon: {fileID: 21300000, guid: 255955853bacd0b439478eb97ffa25d9, type: 3}
+      m_Description: 'Chops down trees easily.
+
+        Great to have on hand.'
+      m_Pickup: {fileID: 375143188622409950, guid: 5bba0681021dfce4b9f7769795c9aea3, type: 3}
+      m_StackSize: 1
+      m_Weight: 2
+      m_Tag:
+        m_Value: Wieldable
+      m_Properties:
+        m_Array:
+        - m_Name: Durability
+          m_Id: -3497939
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 5357987
+            Amount: 5
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.75
+  - m_Name: Tools
+    m_Items:
+    - m_Name: Wooden Torch
+      m_Id: 9448103
+      m_Category: Tools
+      m_Icon: {fileID: 21300000, guid: 41100e1e992cf9942bf403374f14f356, type: 3}
+      m_Description: Let there be light!
+      m_Pickup: {fileID: 8296172669144270187, guid: 320f9d5c5f1873442818fc5b70dda38d, type: 3}
+      m_StackSize: 1
+      m_Weight: 0.5
+      m_Tag:
+        m_Value: Wieldable
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 50
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Durability
+          m_Id: -3497939
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 1
+        m_CraftDuration: 3.5
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 5357987
+            Amount: 4
+          - Item:
+              m_Value: 6011459
+            Amount: 2
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.75
+    - m_Name: Compass
+      m_Id: 7659796
+      m_Category: Tools
+      m_Icon: {fileID: 21300000, guid: be79e0e09ed726e4b845a5cb9cecffbe, type: 3}
+      m_Description: 'Basic navigation device.
+
+        Perhaps useful in finding
+        the way back home.'
+      m_Pickup: {fileID: 5708347702049585517, guid: d323e82c4b5bcbf43b05b34c16643904, type: 3}
+      m_StackSize: 1
+      m_Weight: 0.5
+      m_Tag:
+        m_Value: Wieldable
+      m_Properties:
+        m_Array:
+        - m_Name: Durability
+          m_Id: -3497939
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+  - m_Name: Ammo
+    m_Items:
+    - m_Name: Wooden Arrow
+      m_Id: 9009782
+      m_Category: Ammo
+      m_Icon: {fileID: 21300000, guid: 19ca0e1d177fd3b4385f6790d58a663c, type: 3}
+      m_Description: Cheap and reliable ammo type.
+      m_Pickup: {fileID: 5548253200701518751, guid: 0674a96227aa89c4faf10db8040ba530, type: 3}
+      m_StackSize: 10
+      m_Weight: 0.4
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 50
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 1
+        m_CraftDuration: 1.5
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 7905912
+            Amount: 1
+          - Item:
+              m_Value: 5357987
+            Amount: 1
+          - Item:
+              m_Value: -4642947
+            Amount: 1
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+    - m_Name: 30-30 Bullet
+      m_Id: 5402654
+      m_Category: Ammo
+      m_Icon: {fileID: 21300000, guid: 31a4093bfce46e445aa43057855d250b, type: 3}
+      m_Description: Powerfull ammo type, devastating if paired with the right weapon.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 10
+      m_Weight: 0.3
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array: []
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 1.5
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 0
+            Amount: 1
+          - Item:
+              m_Value: 0
+            Amount: 1
+          - Item:
+              m_Value: 0
+            Amount: 1
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+  - m_Name: Clothing
+    m_Items:
+    - m_Name: Military Hat
+      m_Id: 5139251
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: 1ef6c0a882054cc40b5269bcce123d08, type: 3}
+      m_Description: Basic hat, can keep you warm while offering some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.2
+      m_Tag:
+        m_Value: Head Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 2
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: Wool Hat
+      m_Id: -4067934
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: d0982bbc4520c4046bea1f71f9b2f0b4, type: 3}
+      m_Description: Basic hat, can keep you warm while offering some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.2
+      m_Tag:
+        m_Value: Head Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 2
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: Short Jeans
+      m_Id: 328817
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: f5fbb40dd4493824e908e80d07c1d1a0, type: 3}
+      m_Description: Basic jeans, can keep you warm while offering some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.3
+      m_Tag:
+        m_Value: Legs Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 4
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: Shirt
+      m_Id: -3397587
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: 091ba8bd87f510e4cb5df256c9d0614f, type: 3}
+      m_Description: Rugged shirt, can keep you warm and comfortable while offering
+        some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.4
+      m_Tag:
+        m_Value: Torso Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 5
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: Red T-Shirt
+      m_Id: 8179199
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: 6e65d3f6214b6ff42ac07dd50f3fba92, type: 3}
+      m_Description: Basic T-Shirt, can keep you warm and comfortable while offering
+        some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.3
+      m_Tag:
+        m_Value: Torso Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 5
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: White T-Shirt
+      m_Id: 6276974
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: d304c4dd6f63e434eb5868184084a15f, type: 3}
+      m_Description: Basic T-Shirt, can keep you warm and comfortable while offering
+        some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.3
+      m_Tag:
+        m_Value: Torso Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 5
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: Jeans
+      m_Id: -7075860
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: 606c6c4201856e84e8ea56d44c701630, type: 3}
+      m_Description: Basic jeans, can keep you warm and comfortable while offering
+        some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.35
+      m_Tag:
+        m_Value: Legs Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 4
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: Pants
+      m_Id: -3423933
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: cb679336840ec1349ac9177db32a20e2, type: 3}
+      m_Description: Basic pants, can keep you warm and comfortable while offering
+        some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.35
+      m_Tag:
+        m_Value: Legs Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 4
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+    - m_Name: Boots
+      m_Id: 4150061
+      m_Category: Clothing
+      m_Icon: {fileID: 21300000, guid: ca1263e17cc16a549a513153a014ec9b, type: 3}
+      m_Description: Basic boots, can keep you warm and comfortable while offering
+        some defense.
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 0.3
+      m_Tag:
+        m_Value: Feet Equipment
+      m_Properties:
+        m_Array:
+        - m_Name: Fuel
+          m_Id: 4132134
+          m_Type: 2
+          m_FixedValue: 100
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+      m_Crafting:
+        m_HasBlueprint: 1
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array:
+          - Item:
+              m_Value: 6011459
+            Amount: 3
+        m_AllowDismantle: 1
+        m_DismantleEfficiency: 0.5
+  - m_Name: Attachments
+    m_Items:
+    - m_Name: Sniper Scope 5x
+      m_Id: -421658
+      m_Category: Attachments
+      m_Icon: {fileID: 0}
+      m_Description: 
+      m_Pickup: {fileID: 0}
+      m_StackSize: 1
+      m_Weight: 1
+      m_Tag:
+        m_Value: Untagged
+      m_Properties:
+        m_Array: []
+      m_Crafting:
+        m_HasBlueprint: 0
+        m_IsCraftable: 0
+        m_CraftDuration: 0
+        m_Blueprint:
+          m_Array: []
+        m_AllowDismantle: 0
+        m_DismantleEfficiency: 0
+  m_ItemProperties:
+    m_Array:
+    - Id: -3497939
+      Name: Durability
+      Type: 2
+    - Id: 4132134
+      Name: Fuel
+      Type: 2
+    - Id: -5672974
+      Name: Cooked Amount
+      Type: 2
+    - Id: 1946524
+      Name: Cooked Output
+      Type: 3
+    - Id: -3953950
+      Name: Health Restore
+      Type: 2
+    - Id: -822597
+      Name: Thirst Restore
+      Type: 2
+    - Id: 6644619
+      Name: Hunger Restore
+      Type: 2
+    - Id: 3026253
+      Name: Ammo In Magazine
+      Type: 1
+    - Id: -460046
+      Name: Aimer Attachment
+      Type: 3
+    - Id: -2155680
+      Name: Reloader Attachment
+      Type: 3
+    - Id: -4094367
+      Name: Ammo Attachment
+      Type: 3
+    - Id: 2579268
+      Name: Trigger Attachment
+      Type: 3
+    - Id: 7728856
+      Name: Recoil Attachment
+      Type: 3
+    - Id: -7018214
+      Name: Shooter Attachment
+      Type: 3
+  m_ItemTags:
+    m_Array:
+    - Wieldable
+    - Head Equipment
+    - Torso Equipment
+    - Legs Equipment
+    - Feet Equipment

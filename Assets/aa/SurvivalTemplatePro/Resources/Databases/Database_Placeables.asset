@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1099d62401dfffd42a5d5236ab7ffc6e, type: 3}
+  m_Name: Database_Placeables
+  m_EditorClassIdentifier: 
+  m_PlaceableCategories:
+  - Name: Fire
+    Placeables:
+    - {fileID: 2220883585905090366, guid: 0c5686694d0ea794c8fd046871ed506c, type: 3}
+    - {fileID: -142367877459773696, guid: 89d2d99518751b240b52af3b8965f127, type: 3}
+  - Name: Workstation
+    Placeables:
+    - {fileID: 7428100838116654240, guid: 6c0a26e110d18794999d58f470f77bd5, type: 3}
+  - Name: Storage
+    Placeables:
+    - {fileID: 7073008599214131088, guid: 68e95bb250ca81849a7f00d8991dd002, type: 3}
+  - Name: Shelter
+    Placeables:
+    - {fileID: -3725189722714725408, guid: 6583b44d70c8a294492567b92469a854, type: 3}
+  - Name: Custom Building
+    Placeables:
+    - {fileID: 167789332324760844, guid: f67592f8713c19942a2a9fe137818967, type: 3}
+    - {fileID: 1709968068857740728, guid: c38c6d2e5a3c3144a9deeef52a5a4f1e, type: 3}
+    - {fileID: 1603983602005540779, guid: 6cf93df62cdad5a41afbfb0fb2ff2bea, type: 3}
+    - {fileID: 198911566930445753, guid: 92292b7ca92811a44ae1c50ad84d61cd, type: 3}
+    - {fileID: 5703204532526308199, guid: ce2c8c62b84dd7d408d4a6045f73f657, type: 3}
+    - {fileID: -8741021986717898292, guid: 469abc27fafc70a419ac9aed52ef21ba, type: 3}
+    - {fileID: 2139406443001569526, guid: d2fc64aaaaa132c449210772e5120760, type: 3}
+    - {fileID: 2403333111402489725, guid: eb02b14933406bc48ba0b1fa734e53bc, type: 3}
+  - Name: Premade Building
+    Placeables:
+    - {fileID: 3211766843882115902, guid: dd2b7d3c236b73c46946c7af630cad85, type: 3}
+    - {fileID: 8400578254399180137, guid: f28dc90c2a8efa442b5eb285e1558248, type: 3}
+  m_Structure: {fileID: 4265423152161599560, guid: d836465da72738042b29021e343f3bb7, type: 3}
+  m_PlacementAllowedMaterial: {fileID: 2100000, guid: 687cd83d3624def41bfb53c3569288c8, type: 2}
+  m_PlacementDeniedMaterial: {fileID: 2100000, guid: f5257ae3c970fc948beb0a2a3e56af86, type: 2}
+  m_FreePlacementMask:
+    serializedVersion: 2
+    m_Bits: 286721
+  m_EntityMask:
+    serializedVersion: 2
+    m_Bits: 131072
