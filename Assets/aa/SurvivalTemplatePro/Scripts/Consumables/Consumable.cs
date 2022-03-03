@@ -38,6 +38,7 @@ namespace SurvivalTemplatePro
 
             bool consumed = false;
 
+            //buradakini kopyala neye uyarliycaksan uyarla 
             if (character.TryGetModule(out IHungerManager hungerManager) && (hungerManager.MaxHunger - hungerManager.Hunger) > 1f)
             {              
                 hungerManager.Hunger += Random.Range(m_HungerRestoreMin, m_HungerRestoreMax);

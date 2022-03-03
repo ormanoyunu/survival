@@ -129,6 +129,7 @@ namespace SurvivalTemplatePro.ResourceGathering
 
         private void DestroyGatherable(DamageInfo dmgInfo) 
         {
+            Debug.Log("bu neyi destroy ediyo");
             m_Collider.enabled = false;
 
             for (int i = 0; i < m_Behaviours.Length; i++)
@@ -137,6 +138,8 @@ namespace SurvivalTemplatePro.ResourceGathering
 
         private void SpawnBehaviours()
         {
+            Debug.Log("tahta parçalarý burdamý üretiliyor acep");
+            Debug.Log("HAYIR BURASI AÐACA HER VURDUÐUNDA ÇALIÞAN YER");
             var behaviourObject = Instantiate(m_RiggedPrefab, transform);
             m_Behaviours = behaviourObject.GetComponents<GatherableBehaviour>();
 

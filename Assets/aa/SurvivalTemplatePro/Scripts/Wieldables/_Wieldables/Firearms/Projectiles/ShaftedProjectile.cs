@@ -130,7 +130,9 @@ namespace SurvivalTemplatePro
 
 			if (Physics.Raycast(position, direction, out RaycastHit hitInfo, 2f, m_Mask, QueryTriggerInteraction.Ignore) && !m_Launcher.HasCollider(hitInfo.collider))
 			{
-				// If the object is damageable...
+                // If the object is damageable...
+                //zombilere hasar burada gelicek
+                Debug.Log("okla zombi hasarı");
 				if (hitInfo.collider.TryGetComponent(out IDamageReceiver receiver))
 				{
 					float currentSpeed = m_Rigidbody.velocity.magnitude;
@@ -140,14 +142,14 @@ namespace SurvivalTemplatePro
 					receiver.HandleDamage(new DamageInfo(-damage, DamageType.Stab, hitInfo.point, direction, m_ImpactForce, m_Launcher));
 				}
 
-				// If the object is a rigidbody, apply an impact force
+				// If the object is a rigidbody, apply an impact force ( bi impact uyguluyo bunu belki kaldırmamız gerekebilir.)
 				if (hitInfo.rigidbody != null)
 					hitInfo.rigidbody.AddForceAtPosition(transform.forward * m_ImpactForce, hitInfo.point, ForceMode.Impulse);
 
 				// Spawn impact effect
 				SurfaceManager.SpawnEffect(hitInfo, m_PenetrationEffect, 1f);
 
-				// Stick the projectile in the object
+				// Stick the projectile in the object (objeye yapışması)
 				OnSurfacePenetrated(hitInfo);
 
 				m_Done = true;
@@ -212,7 +214,7 @@ namespace SurvivalTemplatePro
 				m_Done = false;
 			}
 		}
-
+        //okun çarptıktan sonra sallanması.
 		private IEnumerator C_DoTwang()
 		{
 			m_TwangPivot = new GameObject("Shafted Projectile Pivot").transform;

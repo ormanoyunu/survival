@@ -70,8 +70,8 @@ namespace SurvivalTemplatePro.ResourceGathering
         private float m_ImpactShakeScale = 1f;
 
         private float m_TimeSinceFallStart = 0f;
-        private bool m_IsFalling;
-        private bool m_HadImpact;
+        public bool m_IsFalling;
+        public bool m_HadImpact;
 
 
         public override void DoHitEffects(DamageInfo damageInfo) { }
@@ -87,6 +87,7 @@ namespace SurvivalTemplatePro.ResourceGathering
             m_FallingTree.GetComponent<Collider>().enabled = true;
             m_FallingTree.isKinematic = false;
             m_FallingTree.AddForce(direction * m_TreeFallForce, ForceMode.Impulse);
+            Debug.Log(m_FallingTree.name+"bu yok ");
 
             m_TreeFallAudio.Play(AudioSource, 1f, SelectionType.Random);
 
@@ -135,12 +136,34 @@ namespace SurvivalTemplatePro.ResourceGathering
         {
             m_TreeImpactAudio.Play(AudioSource, 1f, SelectionType.RandomExcludeLast);
 
-            m_LogsRoot.SetActive(true);
-            m_LogsRoot.transform.SetParent(null);
+            //m_LogsRoot.SetActive(true);
+            //m_LogsRoot.transform.SetParent(null);
 
             ShakeImpactEvent.RaiseEvent(new ShakeImpactEvent(transform.position, m_ImpactShakeRadius, m_ImpactShakeScale * (Mathf.Clamp(m_FallingTree.velocity.sqrMagnitude, 0f, 10f) / 10f)));
 
             yield return new WaitForSeconds(0.1f);
+
+            //foreach (var logRigidbody in m_LogsRoot.transform.GetComponentsInChildren<Rigidbody>())
+            //{
+            //    Transform logTransform = logRigidbody.transform;
+
+            //    logRigidbody.transform.position = new Vector3(logTransform.position.x, logTransform.position.y + m_LogsGroundOffset, logTransform.position.z);
+            //    logRigidbody.AddForce(logTransform.right * Random.Range(-1f, 1f) * m_TreeImpactLogsForce, ForceMode.Impulse);
+
+            //    if (m_TreeImpactFX != null)
+            //        Instantiate(m_TreeImpactFX, logTransform.position, logTransform.rotation);
+            //}
+
+            m_HadImpact = true;
+            m_IsFalling = false;
+
+            //Destroy(m_DestroyType == DestroyType.ThisObject ? gameObject : transform.parent.gameObject);
+        }
+
+        public void yerdeparçala()
+        {
+            m_LogsRoot.SetActive(true);
+            m_LogsRoot.transform.SetParent(null);
 
             foreach (var logRigidbody in m_LogsRoot.transform.GetComponentsInChildren<Rigidbody>())
             {
@@ -152,9 +175,6 @@ namespace SurvivalTemplatePro.ResourceGathering
                 if (m_TreeImpactFX != null)
                     Instantiate(m_TreeImpactFX, logTransform.position, logTransform.rotation);
             }
-
-            m_HadImpact = true;
-            m_IsFalling = false;
 
             Destroy(m_DestroyType == DestroyType.ThisObject ? gameObject : transform.parent.gameObject);
         }

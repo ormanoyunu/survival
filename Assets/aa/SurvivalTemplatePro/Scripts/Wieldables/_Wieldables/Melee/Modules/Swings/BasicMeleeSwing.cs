@@ -94,16 +94,20 @@ namespace SurvivalTemplatePro.WieldableSystem
 				bool isDynamicObject = false;
 
 				// Apply an impact impulse
+                // her şeye uyguluyo ağaca falanda bu zombilere özel değil. bunu boolla falan bir şeyle özelleştirmek lazım.
 				if (hitInfo.rigidbody != null)
 				{
 					hitInfo.rigidbody.AddForceAtPosition(ray.direction * m_ImpactForce, hitInfo.point, ForceMode.Impulse);
+                    Debug.Log("zombi vurduk"+ hitInfo.transform.name + "basic maleeden");
 					isDynamicObject = true;
 				}
 
+                //damage type ve ne kadar damage yedi onu yolluyor. karşıdaki rakibe
 				if (hitInfo.collider.TryGetComponent(out IDamageReceiver receiver))
 					receiver.HandleDamage(new DamageInfo(-m_Damage, m_DamageType, hitInfo.point, ray.direction, m_ImpactForce, user));
 
 				// Surface effect
+                // efektler buradan çıkıyor.
 				SurfaceManager.SpawnEffect(hitInfo, SurfaceEffects.Slash, 1f, isDynamicObject);
 
 				// Hit Audio
@@ -112,6 +116,7 @@ namespace SurvivalTemplatePro.WieldableSystem
 				ConsumeItemDurability(m_DurabilityRemove);
 
 				// Local Effects
+                //mızrağın etrafı falan sallanırken
 				Wieldable.EventManager.PlayEffects(m_SwingHitEffects, 1f);
 			}
 
