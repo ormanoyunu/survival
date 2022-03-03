@@ -27,7 +27,7 @@ namespace SurvivalTemplatePro.WieldableSystem
 				if (hitInfo.collider.TryGetComponent(out IGatherable gatherable) && CheckAngleWithTree(gatherable))
 				{
                     Debug.Log("ağaç şeyi");
-                    Debug.Log(hitInfo.transform.parent);
+                    //Debug.Log(hitInfo.transform.parent);
 					DamageInfo treeDamage = new DamageInfo(11.11f, ray.origin + ray.direction * 0.5f + Vector3.Cross(Vector3.up, ray.direction) * 0.25f, ray.direction, m_ImpactForce);
 					gatherable.Damage(treeDamage);
 
@@ -46,16 +46,13 @@ namespace SurvivalTemplatePro.WieldableSystem
 					// Local Effects
 					Wieldable.EventManager.PlayEffects(m_SwingHitEffects, 1f);
 
-					return hitInfo;
+                    return hitInfo;
 				}
 
-                var fallingTreeScript = hitInfo.collider.GetComponentInParent<TreeFallBehaviour>();
+                Debug.Log(hitInfo.collider.name + "istediğimiz yerden");
+                Debug.Log("a");
 
-                if (fallingTreeScript.m_HadImpact && fallingTreeScript.m_IsFalling)
-                {
-                    Debug.Log("ah");
-                }
-			}
+            }
 
 			return hitInfo;
 		}

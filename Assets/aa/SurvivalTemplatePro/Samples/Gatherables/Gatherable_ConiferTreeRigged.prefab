@@ -998,6 +998,8 @@ MonoBehaviour:
     m_PitchJitter: 0.1
   m_ImpactShakeRadius: 15
   m_ImpactShakeScale: 1.15
+  m_IsFalling: 0
+  m_HadImpact: 0
 --- !u!1 &7822897514760679296
 GameObject:
   m_ObjectHideFlags: 0
