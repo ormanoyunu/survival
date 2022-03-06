@@ -141,6 +141,7 @@ namespace SurvivalTemplatePro.ResourceGathering
 
             ShakeImpactEvent.RaiseEvent(new ShakeImpactEvent(transform.position, m_ImpactShakeRadius, m_ImpactShakeScale * (Mathf.Clamp(m_FallingTree.velocity.sqrMagnitude, 0f, 10f) / 10f)));
 
+            //bura değişti
             yield return new WaitForSeconds(0.1f);
 
             //foreach (var logRigidbody in m_LogsRoot.transform.GetComponentsInChildren<Rigidbody>())
@@ -156,7 +157,7 @@ namespace SurvivalTemplatePro.ResourceGathering
 
             m_HadImpact = true;
             m_IsFalling = false;
-
+            //bu eklendi
             //Destroy(m_DestroyType == DestroyType.ThisObject ? gameObject : transform.parent.gameObject);
         }
 

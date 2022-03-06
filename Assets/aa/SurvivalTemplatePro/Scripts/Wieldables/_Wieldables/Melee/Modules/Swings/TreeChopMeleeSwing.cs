@@ -22,7 +22,9 @@ namespace SurvivalTemplatePro.WieldableSystem
 
 		protected override RaycastHit DoHitCheck(ICharacter user, Ray ray)
 		{
-			if (SphereCast(user, ray, m_HitRadius, m_HitDistance, out RaycastHit hitInfo))
+            var deneme = SphereCast(user, ray, m_HitRadius, m_HitDistance, out RaycastHit hitInfo);
+            Debug.Log(deneme);
+            if (deneme)
 			{
 				if (hitInfo.collider.TryGetComponent(out IGatherable gatherable) && CheckAngleWithTree(gatherable))
 				{

@@ -128,7 +128,7 @@ namespace SurvivalTemplatePro.WieldableSystem
 		protected bool SphereCast(ICharacter user, Ray ray, float radius, float distance, out RaycastHit hitInfo)
 		{
 			RaycastHit[] hits = Physics.SphereCastAll(ray, radius, distance, m_HitMask, QueryTriggerInteraction.Ignore);
-
+            
 			int closestHit = -1;
 			float closestDistance = Mathf.Infinity;
 
@@ -143,11 +143,12 @@ namespace SurvivalTemplatePro.WieldableSystem
 					}
 				}
 			}
-
-			if (closestHit != -1)
+            
+            if (closestHit != -1)
 			{
 				hitInfo = hits[closestHit];
-				return true;
+                //Debug.Log(hitInfo.transform.name);
+                return true;
 			}
 			else
 			{
